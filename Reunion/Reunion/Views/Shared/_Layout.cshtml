@@ -1,44 +1,126 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
-    @Styles.Render("~/Content/css")
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NITO</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Raleway:300,500,400,700,600' rel='stylesheet' type='text/css'>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <link href="style.css" rel="stylesheet" />
+    <!-- <link href="style.less" rel="stylesheet/less" /> -->
+
+    <link rel="stylesheet" type="text/css" href="css/shadowbox.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     @Scripts.Render("~/bundles/modernizr")
 
+    <script src="js/jquery.min.js"></script>
+    <!--  <script src="js/less-1.7.0.min.js"></script>-->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Application name", "Index", "Home", null, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+
+    <header>
+        <div class='topbar hidden-xs'>
+            <div class='container'>
+
+                <ul class='singleline pull-right contact'>
+                    <li>
+                        <a href='#'><i class='fa fa-envelope'></i> kcdragons15@gmail.com</a>
+                    </li>
                 </ul>
-                @Html.Partial("_LoginPartial")
+                <!--Social Icons-->
+                <ul class='singleline social nito-icon'>
+                    <li><a href="#"><i class='fa fa-facebook'></i></a></li>
+                </ul>
             </div>
         </div>
-    </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
-    </div>
+        <div class='menuholderspace'></div>
+        <div class='menuholder'>
+            <div class='container'>
+                <div class='menu-toggle visible-xs'><i class='glyphicon glyphicon-align-justify'></i></div>
+                <a href='#home'><img src='img/logo.png' alt='' class='logo' /></a>
+                <!--Navigation Menues-->
+                <ul class='singleline menu pull-right hidden-xs'>
+                    <li><a href="#home">HOME</a><div class='underlinebox'></div></li>                    
+                </ul>
+                <!--Navigation Menues for Mobile-->
+                <ul class='mobile-menu'>
+                    <li><a href="">HOME</a><div class='underlinebox'></div></li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+    <!--Header Image-->
+    <section class='slider' id='home'>
+        <div class='slider1-spoof'></div>
+        <div class='container'>
+            <div class='row'>
+                <div class='col-sm-11'>
+                    <div class='slider1'>
+                        @RenderBody()
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+
+    </section>
+    <!--About Us Section-->
+     
+   
+
+    <footer>
+        <div class='container'>
+
+            <div class='text-center'>2002-2015 company ltd | designed by <strong>pmvchamara</strong></div>
+
+        </div>
+    </footer>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <script type="text/javascript" src="js/shadowbox.js"></script>
+    <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+    <script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
+
+    <script type="text/javascript">
+        Shadowbox.init();
+    </script>
+
+
+
+    <script>
+        // mobile menu
+
+        $(".menu-toggle").click(function(){
+            $(".mobile-menu").slideToggle();
+        });
+
+  
+        // smooth scroll
+
+        $('a[href*=#]').on('click', function(event){
+            event.preventDefault();
+            $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+        });
+    </script>
+
+
+
 </body>
 </html>

@@ -1,0 +1,41 @@
+Fonts USed:
+http://www.google.com/fonts/specimen/Raleway
+
+Credits:
+Daniel Santi  - https://www.flickr.com/photos/kopaz/
+Ricardo de Zoete - https://dribbble.com/RZDESIGN
+
+
+
+Need customization ? see here - https://www.microlancer.com/explore/customize-a-psd-file/1954-psd-customizing-service
+-----------------------------------------------------
+Follow these steps to edit the contents of a Smart Object:
+
+    In your document, select the Smart Object layer in the Layers panel.
+
+    Choose Layer?Smart Objects?Edit Contents.
+    Or you can simply double-click the Smart Objects layer thumbnail in the Layers panel.
+
+    A dialog box appears, telling you to save your changes and save the file in the same location.
+
+    Click OK to close the dialog box.
+    The Smart Object opens in the program in which it was created, either Illustrator or Photoshop.
+
+    Edit your file:
+
+    Choose File?Save to incorporate the edits.
+
+    Close your source file.
+
+    Return to your Photoshop document, which contains your Smart Object.
+    If all goes as expected, all instances of the Smart Object are updated.
+
+::::::::::::::::::::::::::::::::::::
+
+Contact me if you have any questions.
+http://themeforest.net/user/pmvchamara
+
+My portfolio - www.pmvchamara.com
+
+
+Thank you.
