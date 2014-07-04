@@ -37,4 +37,4 @@ Icon
 
 *.zip
 
-./template/*
+template/*
