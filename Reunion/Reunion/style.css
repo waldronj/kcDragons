@@ -340,6 +340,7 @@ section.slider {
   padding: 0;
   color: #FFF;
   background-size: 100%, 100px;
+  
 }
 section.slider .slider1-spoof {
   background-color: rgba(46, 45, 50, 0.6);
@@ -355,6 +356,7 @@ section.slider .slider1 {
   margin: 141px 0;
   border-radius: 10px;
   position: relative;
+  min-height:400px;
 }
 section.slider .slider1 h1 {
   font-size: 48px;

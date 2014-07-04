@@ -188,6 +188,7 @@
     <Content Include="img\blog3.png" />
     <Content Include="img\blog4.png" />
     <Content Include="img\cart.png" />
+    <Content Include="img\dragons.jpg" />
     <Content Include="img\Facebook.png" />
     <Content Include="img\fbicon.png" />
     <Content Include="img\GoogleP.png" />
@@ -243,6 +244,7 @@
     <Content Include="fonts\fontawesome-webfont.ttf" />
     <Content Include="fonts\fontawesome-webfont.woff" />
     <Content Include="fonts\fontawesome-webfont.eot" />
+    <None Include="Properties\PublishProfiles\dragons.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />

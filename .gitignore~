@@ -43,10 +43,3 @@ reunion/obj/*
 reunion/packages/*
 reunion/reunion/obj/*
 reunion/reunion/properties/publishprofiles/*
-reunion/reunion/bin/*
-
-Reunion/Reunion/bin/Reunion.pdb
-Reunion/Reunion/bin/Reunion.dll
-Reunion/Reunion/bin/Reunion.dll
-*.dll
-*.pdb

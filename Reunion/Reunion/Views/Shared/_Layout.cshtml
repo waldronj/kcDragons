@@ -51,10 +51,12 @@
                 <!--Navigation Menues-->
                 <ul class='singleline menu pull-right hidden-xs'>
                     <li><a href="#home">HOME</a><div class='underlinebox'></div></li>                    
+                    <li><a href="#aboutus">ABOUTUS</a><div class='underlinebox'></div></li>
                 </ul>
                 <!--Navigation Menues for Mobile-->
                 <ul class='mobile-menu'>
                     <li><a href="">HOME</a><div class='underlinebox'></div></li>
+                    <li><a href="#aboutus">ABOUTUS</a><div class='underlinebox'></div></li>                    
                 </ul>
             </div>
         </div>
@@ -80,19 +82,12 @@
         <div class='container'>
             <div class='row'>
                 <div>
-
                     <h1 class='title text-center'><span>ABOUT US</span><div class='underlinebox'></div></h1>
-
-
                     @RenderBody()
-
                 </div>
             </div>
         </div>
     </section>
-     
-   
-
     <footer>
         <div class='container'>
 
@@ -133,8 +128,5 @@
             $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
         });
     </script>
-
-
-
 </body>
 </html>
