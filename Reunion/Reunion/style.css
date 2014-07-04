@@ -336,10 +336,10 @@ header .menuholder ul.mobile-menu li a:hover {
   color: #62aabc;
 }
 section.slider {
-  background: url("img/home.jpg");
+  background: url("img/dragons.jpg") no-repeat center center fixed;
   padding: 0;
   color: #FFF;
-  position: relative;
+  background-size: 100%, 100px;
 }
 section.slider .slider1-spoof {
   background-color: rgba(46, 45, 50, 0.6);
@@ -394,7 +394,7 @@ section.slider .right-content {
   bottom: -100px;
 }
 section.aboutus {
-  padding-top: 200px;
+  padding-top: 10px;
 }
 @media (max-width: 992px) {
   section.aboutus {
