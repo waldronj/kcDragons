@@ -38,11 +38,17 @@ Icon
 *.zip
 
 template/*
+
 reunion/bin/*
+
 reunion/obj/*
+
 reunion/packages/*
-reunion/reunion/obj/*
+
+Reunion/Reunion/obj/*
+
 reunion/reunion/properties/publishprofiles/*
+
 reunion/reunion/bin/*
 
 Reunion/Reunion/bin/Reunion.pdb
