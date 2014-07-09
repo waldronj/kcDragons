@@ -218,7 +218,7 @@ header .menuholderspace {
 }
 header .menuholder {
   background: #f84241;
-  padding: 25px 0 25px 0;
+  padding: 0;
 }
 @media (min-width: 768px) {
   header .menuholder.fixed {
@@ -296,6 +296,7 @@ header .menuholder ul.menu li a {
   -o-transition: all 300ms;
 }
 header .menuholder ul.menu li:hover .underlinebox {
+  
   -webkit-opacity: 100;
   -moz-opacity: 100;
   opacity: 100;

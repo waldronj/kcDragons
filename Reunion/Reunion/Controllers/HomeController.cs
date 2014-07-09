@@ -14,8 +14,8 @@ namespace Reunion.Controllers
         }
 
         public ActionResult Donate()
-        {
-            
-        }
+        {            
+            return View();
+        }       
     }
 }
