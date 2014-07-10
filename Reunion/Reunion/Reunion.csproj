@@ -341,7 +341,9 @@
     <Content Include="template\HTML\js\shadowbox.js" />
     <Content Include="template\HTML\style.css" />
     <Content Include="template\PSD\read me.txt" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>

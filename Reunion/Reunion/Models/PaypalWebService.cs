@@ -5,12 +5,14 @@ using System.Web;
 using Newtonsoft.Json;
 using Moolah.PayPal;
 using System.Configuration;
+using Moolah;
+using System.Net;
 
 namespace Reunion.Models
 {
     public class PaypalWebService
     {
-        public void GeneratePayPalToken(decimal amount, int adults, int kids)
+        public PayPalExpressCheckoutToken GeneratePayPalToken(int adults, int kids)
         {
             string userId = ConfigurationManager.AppSettings["userId"].ToString();
             string password = ConfigurationManager.AppSettings["password"].ToString();
@@ -32,14 +34,13 @@ namespace Reunion.Models
                     CurrencyCodeType = CurrencyCodeType.USD,
                 }, cancelUrl, confirmationUrl);
 
-               if (request.Status == PaymentStatus.Failed)
+               if (response.Status == PaymentStatus.Failed)
                {
-                   throw new Exception(request.FailureMessage);
+                   throw new Exception(response.FailureMessage);
                }
                else
                {
-                   // MakePayment();
-                   Response.Redirect(request.RedirectUrl);
+                   return response;
                } 
             }
             if (kids == 0 && adults != 0)
@@ -52,17 +53,17 @@ namespace Reunion.Models
                     },
                     CurrencyCodeType = CurrencyCodeType.USD,
                 }, cancelUrl, confirmationUrl);
-                
-                if (request.Status == PaymentStatus.Failed)
+
+                if (response.Status == PaymentStatus.Failed)
                 {
-                    throw new Exception(request.FailureMessage);
+                    throw new Exception(response.FailureMessage);
                 }
                 else
                 {
-                    // MakePayment();
-                    Response.Redirect(request.RedirectUrl);
-                } 
-            }   
+                    return response;
+                }
+            }
+            else return null;
         }
 
           
