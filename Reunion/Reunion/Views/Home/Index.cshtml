@@ -4,24 +4,132 @@
 
 <div class="jumbotron">
     <h1>KC Dragons Rugby</h1>
-    <p class="lead">KC Dragons have been around for 15 years and to celebrate we're having a reunion.</p>
-    <p><a href="http://asp.net" class="buttonA red">Learn more &raquo;</a></p>
+    <p class="lead">KC Dragons have been around for 15 years and to celebrate we're having a reunion.</p>    
 </div>
 
 <div class="row">
     <div class="col-md-4">
         <h2>Reunion</h2>
         <p>If you are planning on attending the reunion and do not want a T-shirt choose this option.</p>
-        <p><a class="buttonA red" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+        <p>Prices are as follows:</p>
+        <p>Ages 12+ $15.00</p>
+        <p>Ages 3-11 $7</p>
+        <p>3 and Under are free</p>
+        <div>
+            <form action="/Home/Dinner" method="post">
+                <div>
+                    <label>Adults</label>
+                    <select name="numadults" class="input-lg">
+                        <option>0</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                    </select>
+                </div>
+                <div style="padding-top:1em;">
+                    <label>Kids</label>
+                    <select name="numkids" class="input-lg">
+                        <option>0</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                    </select>
+                </div>
+        <div>
+            <h3>Pay With PayPal</h3>
+            <div>
+                <input type="submit" class="buttonA" value="Just Dinner" />
+            </div>
+        </div>
+        </form>
+    </div>
     </div>
     <div class="col-md-4">
         <h2>Reunion and T-Shirt</h2>
         <p>If you plan on attending the reunion and also would like a T-shirt, choose this option.</p>
-        <p><a class="buttonA red" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+        <form action="/Home/DinnerAndShirt" method="post">
+            <div>
+                <label>Adults</label>
+                <select name="numadults" class="input-lg">
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                </select>
+            </div>
+            <div style="padding-top:1em;">
+                <label>Kids</label>
+                <select name="numkids" class="input-lg">
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                </select>
+            </div>
+            <div style="padding-top:1em;">
+                <label>Shirts</label>
+                <select name="numkids" class="input-lg">
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                </select>
+            </div>
+            <div>
+                <h3>Pay With PayPal</h3>
+                <div>
+                    <input type="submit" class="buttonA" value="Just Dinner" />
+                </div>
+            </div>
+        </form>
     </div>
     <div class="col-md-4">
         <h2>Donate</h2>
         <p>Help the Dragons Rugby team continue to thrive for the next 15 years.</p>
-        <p><a class="buttonA red" href=" http />/go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+        <form action="/Home/Donate" method="post">            
+            <h3>Enter any amount that you can to help out the Dragons</h3>
+            <input type="text" name="amount" class="input-lg"/>                
+            <div>
+                <h4>Donate With PayPal</h4>
+                <div>
+                    <input type="submit" class="buttonA" value="Donate" />
+                </div>
+            </div>
+        </form>
     </div>
 </div>
